@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Panes con Pollo Ejemegsa"
+description = "Sitio web adaptable para el emprendimiento salvadoreño Panes con Pollo Ejemegsa, con información del negocio, menú, recursos y contacto."
+version = "1.0.0"
+id = "artifacts/panes-ejemegsa"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22155
+
+[services.development]
+run = "pnpm --filter @workspace/panes-ejemegsa run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/panes-ejemegsa", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/panes-ejemegsa/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22155"
+BASE_PATH = "/"
