@@ -15,7 +15,7 @@ export default function Home() {
           <div className="hero-actions"><OrderLink /><Link href="/menu" className="btn btn-outline">Conoce nuestro pan <ArrowRight size={16} /></Link></div>
         </div>
         <div className="hero-art">
-          <img className="hero-logo" src="/logo-ejemegsa.png" alt="Emblema de Ejemegsa con su pan con pollo, el volcán y la tradición jucuapense" width="1024" height="1024" fetchPriority="high" />
+          <img className="hero-logo" src={`${import.meta.env.BASE_URL}logo-ejemegsa.png`} alt="Emblema de Ejemegsa con su pan con pollo, el volcán y la tradición jucuapense" width="1024" height="1024" fetchPriority="high" />
           <div className="hero-stamp">Jucuapa<small>EL SALVADOR</small></div>
         </div>
       </div>

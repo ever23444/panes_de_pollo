@@ -26,7 +26,7 @@ export default function Navigation() {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="brand" aria-label="Panes con Pollo Ejemegsa, inicio" data-testid="link-brand-home">
-          <img src="/logo-ejemegsa.png" alt="Logotipo de Panes con Pollo Ejemegsa" width="51" height="51" />
+          <img src={`${import.meta.env.BASE_URL}logo-ejemegsa.png`} alt="Logotipo de Panes con Pollo Ejemegsa" width="51" height="51" />
           <span><span className="brand-name">Ejemegsa</span><span className="brand-sub">Sabor jucuapense</span></span>
         </Link>
         <nav id="main-menu" className={`nav-links${open ? ' open' : ''}`} aria-label="Navegación principal">
