@@ -1,6 +1,6 @@
 import Seo from '@/components/Seo';
 
-const creatorsImage = 'https://drive.google.com/uc?export=view&id=1uMKGWkvQObuYqkx2w-lHGZoIk4A1FJmv';
+const creatorsImage = `${import.meta.env.BASE_URL}creadores-ejemegsa.jpg`;
 
 const highlights = [
   {
