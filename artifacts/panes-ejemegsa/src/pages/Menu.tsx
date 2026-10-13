@@ -32,7 +32,7 @@ const burgers = [
     name: 'Tocino y queso azul',
     description: 'Tocino crujiente y queso azul para un sabor intenso.',
     price: '5.50',
-    image: 'https://guanacos.com/wp-content/uploads/2021/12/Foto-1-5.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd5xSKhPWEHJu_ejLNUddC09q7jbud2p_WlDOAdPItlyaTa74oOsJcUz9K&s=10',
   },
   {
     name: 'Hamburguesa de la casa',
