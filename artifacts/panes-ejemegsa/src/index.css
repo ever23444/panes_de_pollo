@@ -133,10 +133,8 @@ a { color: inherit; text-decoration: none; }
 .value-card h2 { font:600 1.8rem var(--app-font-serif); margin:20px 0 10px; }
 .value-card p { line-height:1.75; color:#626a74; margin:0; }
 .menu-product { background:#f0e4d2; border-radius:4px 90px 4px 90px; display:grid; grid-template-columns:.7fr 1.3fr; overflow:hidden; align-items:center; }
-.menu-mark { min-height:380px; display:grid; place-items:center; background:#e3ceb0; position:relative; overflow:hidden; }
-.menu-mark::before,.menu-mark::after { content:''; position:absolute; border:1px solid #172b4620; width:280px; height:280px; border-radius:50%; }
-.menu-mark::after { width:220px; height:220px; }
-.menu-mark span { position:relative; z-index:1; font:500 5rem var(--app-font-serif); color:#b94d28; }
+.menu-mark { min-height:380px; position:relative; overflow:hidden; background:#e3ceb0; }
+.menu-mark img { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:cover; }
 .menu-details { padding:45px 54px; }
 .menu-details h2 { font:600 clamp(2.2rem,4vw,3.8rem)/1 var(--app-font-serif); letter-spacing:-.04em; margin:14px 0; }
 .menu-details p { line-height:1.8; color:#5f6772; }

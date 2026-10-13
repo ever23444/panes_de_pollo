@@ -1,4 +1,4 @@
-import { ArrowRight, Utensils } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'wouter';
 import Seo from '@/components/Seo';
 import OrderLink from '@/components/OrderLink';
@@ -80,7 +80,13 @@ export default function Menu() {
       <section className="section">
         <div className="container">
           <article className="menu-product">
-            <div className="menu-mark" aria-hidden="true"><span><Utensils size={66} strokeWidth={1.1} /></span></div>
+            <div className="menu-mark">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBGpf7HhsXf6tshSyfocTaOvQsmSzGVjBfH2snJNyJEZIuUb1mgP_XunNy&s=10"
+                alt="Pan con pollo estilo jucuapense de Ejemegsa"
+                loading="lazy"
+              />
+            </div>
             <div className="menu-details">
               <span className="eyebrow">Nuestro producto</span>
               <h2>Pan con pollo<br />estilo jucuapense</h2>
