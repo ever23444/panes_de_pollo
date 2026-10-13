@@ -64,11 +64,23 @@ const burgers = [
     price: '7.00',
     image: 'https://comedera.com/wp-content/uploads/sites/9/2023/01/sandwich-de-pollo-empanado.jpg',
   },
+  {
+    name: 'Pan Campirano',
+    description: 'Pan con pollo, vegetales frescos y aderezo, inspirado en los sabores del campo.',
+    price: '5.00',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSrRbqJMI4YrUXvV4jHIOiDMwrIIjSu6jjPYT0iz0yj0FZE-L9j9AresU&s=10',
+  },
+  {
+    name: 'Pan Cosecha Jucuapense',
+    description: 'Pollo sazonado con repollo y salsa de la casa, servido en pan suave.',
+    price: '6.00',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9VgnXoWSo0VKST9DmzVeBu0mvM_1Bl98Xcj0l5a2JOg&s=10',
+  },
 ];
 
 export default function Menu() {
   return <>
-    <Seo title="Menú | Pan con pollo y hamburguesas" description="Descubre el pan con pollo estilo jucuapense y nuestras hamburguesas con precios de $3.50 a $7.00. Consulta por nuestros canales de contacto." />
+    <Seo title="Menú | Pan con pollo" description="Descubre nuestros panes con pollo estilo jucuapense, con precios de $3.50 a $7.00. Consulta por nuestros canales de contacto." />
     <main id="contenido" className="page-main">
       <header className="page-intro">
         <div className="container">
@@ -98,12 +110,12 @@ export default function Menu() {
           </article>
         </div>
       </section>
-      <section className="section burger-section" id="hamburguesas">
+      <section className="section burger-section" id="panes-con-pollo">
         <div className="container">
           <div className="section-heading">
             <div>
               <span className="eyebrow">Un antojo para cada gusto</span>
-              <h2>Menú de hamburguesas</h2>
+              <h2>Menú de panes con pollo</h2>
             </div>
             <p className="burger-intro">Elige tu favorita. Precios desde $3.50 hasta $7.00.</p>
           </div>
@@ -122,7 +134,7 @@ export default function Menu() {
             ))}
           </div>
           <p className="burger-note">Precios e imágenes de referencia. Confirma productos disponibles y detalles al hacer tu pedido.</p>
-          <div className="burger-order"><OrderLink>Consultar hamburguesas</OrderLink></div>
+          <div className="burger-order"><OrderLink>Consultar panes con pollo</OrderLink></div>
         </div>
       </section>
       <section className="section" style={{ paddingTop: 0 }}>
