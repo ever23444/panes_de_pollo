@@ -141,6 +141,18 @@ a { color: inherit; text-decoration: none; }
 .menu-details h2 { font:600 clamp(2.2rem,4vw,3.8rem)/1 var(--app-font-serif); letter-spacing:-.04em; margin:14px 0; }
 .menu-details p { line-height:1.8; color:#5f6772; }
 .menu-note { border-top:1px solid #d5c5ae; margin-top:26px; padding-top:19px; font-size:.84rem; color:#606875; }
+.burger-section { background:#f1e8d8; }
+.burger-intro { max-width:330px; margin:0; color:#606875; line-height:1.7; }
+.burger-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.burger-card { overflow:hidden; border:1px solid #e4d6c2; border-radius:4px 38px 4px 4px; background:#fbf7ef; }
+.burger-image { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; background:#e3ceb0; }
+.burger-card-content { padding:20px; }
+.burger-card-heading { display:flex; align-items:start; justify-content:space-between; gap:12px; }
+.burger-card h3 { margin:0; font:600 1.35rem/1.15 var(--app-font-serif); }
+.burger-price { flex:none; color:#b94d28; font-weight:700; }
+.burger-card p { margin:12px 0 0; color:#606875; font-size:.9rem; line-height:1.65; }
+.burger-note { margin:22px 0 0; color:#606875; font-size:.82rem; }
+.burger-order { margin-top:24px; }
 .guide-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
 .guide-card { min-height:290px; display:flex; flex-direction:column; padding:25px; border:1px solid #e1d5c4; background:#fbf7ef; border-radius:4px 45px 4px 4px; transition:transform .3s,box-shadow .3s; }
 .guide-card:hover { transform:translateY(-5px); box-shadow:0 14px 35px #36251312; }
@@ -169,7 +181,7 @@ a { color: inherit; text-decoration: none; }
  .nav-links { gap:16px; }.nav-links a { font-size:.8rem; }.nav-cta { padding:0 13px; }
  .hero-grid { grid-template-columns:1fr 1fr; }.hero-art { min-height:400px; }
  .intro-grid { gap:40px; }.footer-top { grid-template-columns:1fr 1fr; }.footer-top > :first-child { grid-column:1/-1; }
- .contact-grid { gap:35px; }.guide-grid { grid-template-columns:repeat(2,1fr); }
+ .contact-grid { gap:35px; }.guide-grid,.burger-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
 @media(min-width:681px) {
  .nav-links .mobile-order { display:none; }
@@ -192,7 +204,8 @@ a { color: inherit; text-decoration: none; }
  .cta-inner { align-items:start; flex-direction:column; }.cta-band { padding:47px 0; }
  .footer-top { grid-template-columns:1fr 1fr; gap:28px 18px; }.footer-top > :first-child { grid-column:1/-1; }.footer-bottom { flex-direction:column; }
  .page-intro { padding:66px 0 48px; }.page-intro h1 { font-size:3.35rem; }.page-intro p { font-size:1rem; }
- .cards-two,.guide-grid { grid-template-columns:1fr; }.value-card { padding:25px; }
+ .cards-two,.guide-grid,.burger-grid { grid-template-columns:1fr; }.value-card { padding:25px; }
+ .burger-intro { max-width:none; }
  .menu-mark { min-height:220px; }.menu-mark span { font-size:4rem; }.menu-details { padding:31px 25px 35px; }
  .contact-form { padding:25px 20px; }.guide-card { min-height:255px; }
 }

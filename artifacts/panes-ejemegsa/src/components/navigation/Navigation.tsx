@@ -6,7 +6,7 @@ import OrderLink from '@/components/OrderLink';
 const routes = [
   { href: '/', label: 'Inicio' },
   { href: '/nosotros', label: 'Nosotros' },
-  { href: '/menu', label: 'Nuestro pan' },
+  { href: '/menu', label: 'Menú' },
   { href: '/recursos', label: 'Recursos' },
   { href: '/creadores', label: 'Creadores' },
   { href: '/contacto', label: 'Contacto' },
